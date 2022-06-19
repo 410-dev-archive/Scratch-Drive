@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3A9403F285FAE2C00110190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9403E285FAE2C00110190 /* AppDelegate.swift */; };
+		C3A94041285FAE2C00110190 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A94040285FAE2C00110190 /* ViewController.swift */; };
+		C3A94043285FAE2D00110190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A94042285FAE2D00110190 /* Assets.xcassets */; };
+		C3A94046285FAE2D00110190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A94044285FAE2D00110190 /* Main.storyboard */; };
+		C3A94051285FAE2D00110190 /* Scratch_DriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A94050285FAE2D00110190 /* Scratch_DriveTests.swift */; };
+		C3A9405B285FAE2D00110190 /* Scratch_DriveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9405A285FAE2D00110190 /* Scratch_DriveUITests.swift */; };
+		C3A9405D285FAE2D00110190 /* Scratch_DriveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9405C285FAE2D00110190 /* Scratch_DriveUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3A9404D285FAE2D00110190 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3A94033285FAE2C00110190 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3A9403A285FAE2C00110190;
+			remoteInfo = "Scratch Drive";
+		};
+		C3A94057285FAE2D00110190 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3A94033285FAE2C00110190 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3A9403A285FAE2C00110190;
+			remoteInfo = "Scratch Drive";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3A9403B285FAE2C00110190 /* Scratch Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scratch Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A9403E285FAE2C00110190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3A94040285FAE2C00110190 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3A94042285FAE2D00110190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3A94045285FAE2D00110190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3A94047285FAE2D00110190 /* Scratch_Drive.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scratch_Drive.entitlements; sourceTree = "<group>"; };
+		C3A9404C285FAE2D00110190 /* Scratch DriveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scratch DriveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A94050285FAE2D00110190 /* Scratch_DriveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scratch_DriveTests.swift; sourceTree = "<group>"; };
+		C3A94056285FAE2D00110190 /* Scratch DriveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scratch DriveUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A9405A285FAE2D00110190 /* Scratch_DriveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scratch_DriveUITests.swift; sourceTree = "<group>"; };
+		C3A9405C285FAE2D00110190 /* Scratch_DriveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scratch_DriveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3A94038285FAE2C00110190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3A94049285FAE2D00110190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3A94053285FAE2D00110190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3A94032285FAE2C00110190 = {
+			isa = PBXGroup;
+			children = (
+				C3A9403D285FAE2C00110190 /* Scratch Drive */,
+				C3A9404F285FAE2D00110190 /* Scratch DriveTests */,
+				C3A94059285FAE2D00110190 /* Scratch DriveUITests */,
+				C3A9403C285FAE2C00110190 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3A9403C285FAE2C00110190 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3A9403B285FAE2C00110190 /* Scratch Drive.app */,
+				C3A9404C285FAE2D00110190 /* Scratch DriveTests.xctest */,
+				C3A94056285FAE2D00110190 /* Scratch DriveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3A9403D285FAE2C00110190 /* Scratch Drive */ = {
+			isa = PBXGroup;
+			children = (
+				C3A9403E285FAE2C00110190 /* AppDelegate.swift */,
+				C3A94040285FAE2C00110190 /* ViewController.swift */,
+				C3A94042285FAE2D00110190 /* Assets.xcassets */,
+				C3A94044285FAE2D00110190 /* Main.storyboard */,
+				C3A94047285FAE2D00110190 /* Scratch_Drive.entitlements */,
+			);
+			path = "Scratch Drive";
+			sourceTree = "<group>";
+		};
+		C3A9404F285FAE2D00110190 /* Scratch DriveTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3A94050285FAE2D00110190 /* Scratch_DriveTests.swift */,
+			);
+			path = "Scratch DriveTests";
+			sourceTree = "<group>";
+		};
+		C3A94059285FAE2D00110190 /* Scratch DriveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3A9405A285FAE2D00110190 /* Scratch_DriveUITests.swift */,
+				C3A9405C285FAE2D00110190 /* Scratch_DriveUITestsLaunchTests.swift */,
+			);
+			path = "Scratch DriveUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3A9403A285FAE2C00110190 /* Scratch Drive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3A94060285FAE2D00110190 /* Build configuration list for PBXNativeTarget "Scratch Drive" */;
+			buildPhases = (
+				C3A94037285FAE2C00110190 /* Sources */,
+				C3A94038285FAE2C00110190 /* Frameworks */,
+				C3A94039285FAE2C00110190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scratch Drive";
+			productName = "Scratch Drive";
+			productReference = C3A9403B285FAE2C00110190 /* Scratch Drive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3A9404B285FAE2D00110190 /* Scratch DriveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3A94063285FAE2D00110190 /* Build configuration list for PBXNativeTarget "Scratch DriveTests" */;
+			buildPhases = (
+				C3A94048285FAE2D00110190 /* Sources */,
+				C3A94049285FAE2D00110190 /* Frameworks */,
+				C3A9404A285FAE2D00110190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3A9404E285FAE2D00110190 /* PBXTargetDependency */,
+			);
+			name = "Scratch DriveTests";
+			productName = "Scratch DriveTests";
+			productReference = C3A9404C285FAE2D00110190 /* Scratch DriveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3A94055285FAE2D00110190 /* Scratch DriveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3A94066285FAE2D00110190 /* Build configuration list for PBXNativeTarget "Scratch DriveUITests" */;
+			buildPhases = (
+				C3A94052285FAE2D00110190 /* Sources */,
+				C3A94053285FAE2D00110190 /* Frameworks */,
+				C3A94054285FAE2D00110190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3A94058285FAE2D00110190 /* PBXTargetDependency */,
+			);
+			name = "Scratch DriveUITests";
+			productName = "Scratch DriveUITests";
+			productReference = C3A94056285FAE2D00110190 /* Scratch DriveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3A94033285FAE2C00110190 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					C3A9403A285FAE2C00110190 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					C3A9404B285FAE2D00110190 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = C3A9403A285FAE2C00110190;
+					};
+					C3A94055285FAE2D00110190 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = C3A9403A285FAE2C00110190;
+					};
+				};
+			};
+			buildConfigurationList = C3A94036285FAE2C00110190 /* Build configuration list for PBXProject "Scratch Drive" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3A94032285FAE2C00110190;
+			productRefGroup = C3A9403C285FAE2C00110190 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3A9403A285FAE2C00110190 /* Scratch Drive */,
+				C3A9404B285FAE2D00110190 /* Scratch DriveTests */,
+				C3A94055285FAE2D00110190 /* Scratch DriveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3A94039285FAE2C00110190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A94043285FAE2D00110190 /* Assets.xcassets in Resources */,
+				C3A94046285FAE2D00110190 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3A9404A285FAE2D00110190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3A94054285FAE2D00110190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3A94037285FAE2C00110190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A94041285FAE2C00110190 /* ViewController.swift in Sources */,
+				C3A9403F285FAE2C00110190 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3A94048285FAE2D00110190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A94051285FAE2D00110190 /* Scratch_DriveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3A94052285FAE2D00110190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A9405D285FAE2D00110190 /* Scratch_DriveUITestsLaunchTests.swift in Sources */,
+				C3A9405B285FAE2D00110190 /* Scratch_DriveUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3A9404E285FAE2D00110190 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3A9403A285FAE2C00110190 /* Scratch Drive */;
+			targetProxy = C3A9404D285FAE2D00110190 /* PBXContainerItemProxy */;
+		};
+		C3A94058285FAE2D00110190 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3A9403A285FAE2C00110190 /* Scratch Drive */;
+			targetProxy = C3A94057285FAE2D00110190 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3A94044285FAE2D00110190 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3A94045285FAE2D00110190 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3A9405E285FAE2D00110190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3A9405F285FAE2D00110190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C3A94061285FAE2D00110190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Scratch Drive/Scratch_Drive.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79KAJRXRUR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.410.Scratch-Drive";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C3A94062285FAE2D00110190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Scratch Drive/Scratch_Drive.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79KAJRXRUR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.410.Scratch-Drive";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C3A94064285FAE2D00110190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79KAJRXRUR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.410.Scratch-DriveTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scratch Drive.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scratch Drive";
+			};
+			name = Debug;
+		};
+		C3A94065285FAE2D00110190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79KAJRXRUR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.410.Scratch-DriveTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scratch Drive.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scratch Drive";
+			};
+			name = Release;
+		};
+		C3A94067285FAE2D00110190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79KAJRXRUR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.410.Scratch-DriveUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Scratch Drive";
+			};
+			name = Debug;
+		};
+		C3A94068285FAE2D00110190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79KAJRXRUR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.410.Scratch-DriveUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Scratch Drive";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3A94036285FAE2C00110190 /* Build configuration list for PBXProject "Scratch Drive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3A9405E285FAE2D00110190 /* Debug */,
+				C3A9405F285FAE2D00110190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3A94060285FAE2D00110190 /* Build configuration list for PBXNativeTarget "Scratch Drive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3A94061285FAE2D00110190 /* Debug */,
+				C3A94062285FAE2D00110190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3A94063285FAE2D00110190 /* Build configuration list for PBXNativeTarget "Scratch DriveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3A94064285FAE2D00110190 /* Debug */,
+				C3A94065285FAE2D00110190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3A94066285FAE2D00110190 /* Build configuration list for PBXNativeTarget "Scratch DriveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3A94067285FAE2D00110190 /* Debug */,
+				C3A94068285FAE2D00110190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3A94033285FAE2C00110190 /* Project object */;
+}
