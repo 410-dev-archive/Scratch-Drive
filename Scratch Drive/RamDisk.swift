@@ -34,17 +34,22 @@ class RamDisk {
     }
     
     func toInfoString() -> String {
-        return "\(name):\((megabytes/2048))"
+        return "\(name):\((megabytes))"
     }
     
-    func fromString(infoStr: String) {
+    func fromString(infoStr: String) -> Bool {
+        if !infoStr.contains(":") {
+            return false
+        }
         let info = infoStr.components(separatedBy: ":")
         name = info[0]
-        megabytes = Int(info[1]) ?? 1 * 2048
+        megabytes = Int(info[1]) ?? 1
+        return true
     }
     
     func isMounted() -> Bool {
         let fileManager = FileManager.default
         return fileManager.fileExists(atPath: "/Volumes/\(name)")
     }
+    
 }
