@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C32651552860710100462AFF /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32651542860710100462AFF /* Configs.swift */; };
 		C3A9403F285FAE2C00110190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9403E285FAE2C00110190 /* AppDelegate.swift */; };
 		C3A94041285FAE2C00110190 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A94040285FAE2C00110190 /* ViewController.swift */; };
 		C3A94043285FAE2D00110190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A94042285FAE2D00110190 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C32651542860710100462AFF /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 		C3A9403B285FAE2C00110190 /* Scratch Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scratch Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A9403E285FAE2C00110190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3A94040285FAE2C00110190 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				C3A94040285FAE2C00110190 /* ViewController.swift */,
 				C3A94069285FAED200110190 /* RamDisk.swift */,
+				C32651542860710100462AFF /* Configs.swift */,
 				C3A94042285FAE2D00110190 /* Assets.xcassets */,
 				C3A94044285FAE2D00110190 /* Main.storyboard */,
 				C3A94047285FAE2D00110190 /* Scratch_Drive.entitlements */,
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3A9406A285FAED200110190 /* RamDisk.swift in Sources */,
+				C32651552860710100462AFF /* Configs.swift in Sources */,
 				C3A94041285FAE2C00110190 /* ViewController.swift in Sources */,
 				C3A9403F285FAE2C00110190 /* AppDelegate.swift in Sources */,
 			);
@@ -425,7 +429,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Scratch Drive/Scratch_Drive.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 79KAJRXRUR;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -436,7 +440,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = alpha1.1;
+				MARKETING_VERSION = alpha2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.410.Scratch-Drive";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -452,7 +456,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Scratch Drive/Scratch_Drive.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 79KAJRXRUR;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -463,7 +467,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = alpha1.1;
+				MARKETING_VERSION = alpha2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.410.Scratch-Drive";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
