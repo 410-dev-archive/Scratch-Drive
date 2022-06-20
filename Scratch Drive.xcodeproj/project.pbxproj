@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C303847A286023B60082DA7B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3038479286023B60082DA7B /* Alert.swift */; };
 		C3A9403F285FAE2C00110190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9403E285FAE2C00110190 /* AppDelegate.swift */; };
 		C3A94041285FAE2C00110190 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A94040285FAE2C00110190 /* ViewController.swift */; };
 		C3A94043285FAE2D00110190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A94042285FAE2D00110190 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		C3A94051285FAE2D00110190 /* Scratch_DriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A94050285FAE2D00110190 /* Scratch_DriveTests.swift */; };
 		C3A9405B285FAE2D00110190 /* Scratch_DriveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9405A285FAE2D00110190 /* Scratch_DriveUITests.swift */; };
 		C3A9405D285FAE2D00110190 /* Scratch_DriveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9405C285FAE2D00110190 /* Scratch_DriveUITestsLaunchTests.swift */; };
+		C3A9406A285FAED200110190 /* RamDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A94069285FAED200110190 /* RamDisk.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C3038479286023B60082DA7B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		C3A9403B285FAE2C00110190 /* Scratch Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scratch Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A9403E285FAE2C00110190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3A94040285FAE2C00110190 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		C3A94056285FAE2D00110190 /* Scratch DriveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scratch DriveUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A9405A285FAE2D00110190 /* Scratch_DriveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scratch_DriveUITests.swift; sourceTree = "<group>"; };
 		C3A9405C285FAE2D00110190 /* Scratch_DriveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scratch_DriveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3A94069285FAED200110190 /* RamDisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamDisk.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +99,13 @@
 		C3A9403D285FAE2C00110190 /* Scratch Drive */ = {
 			isa = PBXGroup;
 			children = (
-				C3A9403E285FAE2C00110190 /* AppDelegate.swift */,
 				C3A94040285FAE2C00110190 /* ViewController.swift */,
+				C3038479286023B60082DA7B /* Alert.swift */,
+				C3A94069285FAED200110190 /* RamDisk.swift */,
 				C3A94042285FAE2D00110190 /* Assets.xcassets */,
 				C3A94044285FAE2D00110190 /* Main.storyboard */,
 				C3A94047285FAE2D00110190 /* Scratch_Drive.entitlements */,
+				C3A9403E285FAE2C00110190 /* AppDelegate.swift */,
 			);
 			path = "Scratch Drive";
 			sourceTree = "<group>";
@@ -251,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A9406A285FAED200110190 /* RamDisk.swift in Sources */,
 				C3A94041285FAE2C00110190 /* ViewController.swift in Sources */,
+				C303847A286023B60082DA7B /* Alert.swift in Sources */,
 				C3A9403F285FAE2C00110190 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
