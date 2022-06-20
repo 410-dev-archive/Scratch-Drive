@@ -22,18 +22,43 @@ class ViewController: NSViewController {
     @IBOutlet weak var TemplateListCombo: NSComboBox!
     
     var currentDrive = RamDisk()
+    
+    var templates: [RamDisk] = []
+    
+    func updateTemplates() {
+        let parse = Configs.parseConfig()
+        if parse.1 {
+            templates = parse.0
+        }else{
+            errorMessage(title: "Error", contents: "Failed to create / load configuration file.")
+            exit(9)
+        }
+        
+        TemplateListCombo.removeAllItems()
+        TemplateListCombo.stringValue = ""
+        
+        for template in templates {
+            TemplateListCombo.addItem(withObjectValue: "\(template.getName()) (\(template.megabytes)MB)")
+        }
+        
+        if templates.count > 0 {
+            TemplateListCombo.stringValue = "\(templates[0].getName()) (\(templates[0].megabytes)MB)"
+            OnSelectTemplate("")
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        SaveTemplateButton.isEnabled = false
-        DeleteTemplateButton.isEnabled = false
+        
+        
+        updateTemplates()
+        
         CreateButton.isEnabled = false
         DismountButton.isEnabled = false
+        SaveTemplateButton.isEnabled = false
+        DeleteTemplateButton.isEnabled = false
         
-        TemplateListCombo.isHidden = true
-        SaveTemplateButton.isHidden = true
-        DeleteTemplateButton.isHidden = true
+        checkValidity()
         
         SizeSlider.minValue = 64
         SizeSlider.maxValue = Double(getAvailableRamSizeInMB())
@@ -47,6 +72,11 @@ class ViewController: NSViewController {
     
     
     @IBAction func OnCreate(_ sender: Any) {
+        if !checkInputValid() {
+            errorMessage(title: "Invalid Input", contents: "Please fill both drive name and size.")
+            return
+        }
+        
         DismountButton.isEnabled = false
         CreateButton.isEnabled = false
         SizeSlider.isEnabled = false
@@ -57,6 +87,10 @@ class ViewController: NSViewController {
     }
     
     @IBAction func OnDismount(_ sender: Any) {
+        if !checkInputValid() {
+            errorMessage(title: "Invalid Input", contents: "Please fill both drive name and size.")
+            return
+        }
         let exitCode = sh("bash", "-c", "diskutil eject '\(currentDrive.getName())'")
         if exitCode == 0 || !currentDrive.isMounted() {
             DismountButton.isEnabled = false
@@ -71,12 +105,52 @@ class ViewController: NSViewController {
     }
     
     @IBAction func OnSaveTemplate(_ sender: Any) {
+        if !checkInputValid() {
+            errorMessage(title: "Invalid Input", contents: "Please fill both drive name and size.")
+            return
+        }
+        currentDrive.setName(name: DriveName.stringValue)
+        currentDrive.setMegabytes(mb: Int(SizeNumField.stringValue) ?? 0)
+        let result = Configs.addTemplate(rd: currentDrive)
+        if !result {
+            errorMessage(title: "Error", contents: "Failed to save template")
+        }
+        updateTemplates()
     }
     
     @IBAction func OnDeleteTemplate(_ sender: Any) {
+        if !checkInputValid() {
+            errorMessage(title: "Invalid Input", contents: "Please fill both drive name and size.")
+            return
+        }
+        let result = Configs.deleteTemplate(name: currentDrive.getName())
+        if !result {
+            errorMessage(title: "Error", contents: "Failed to save template")
+        }
+        updateTemplates()
     }
     
     @IBAction func OnSelectTemplate(_ sender: Any) {
+        let params = TemplateListCombo.stringValue.components(separatedBy: " (")
+        var name: String = ""
+        
+        var index: Int = 0
+        for param in params {
+            if index < params.count - 1 {
+                name += param
+            }
+            if index < params.count - 2 {
+                name += " "
+            }
+            index += 1
+        }
+        
+        currentDrive = Configs.loadTemplate(name: name)
+        DriveName.stringValue = currentDrive.getName()
+        SizeSlider.integerValue = currentDrive.megabytes
+        SizeNumField.stringValue = String(currentDrive.megabytes)
+        
+        checkValidity()
     }
     
     @IBAction func OnHelp(_ sender: Any) {
@@ -97,7 +171,8 @@ class ViewController: NSViewController {
         checkValidity()
     }
     
-    @IBAction func OnSetDriveSizeUnit(_ sender: Any) {
+    public func checkInputValid() -> Bool {
+        return DriveName.stringValue.count > 0 && SizeNumField.stringValue.count > 0
     }
     
     @discardableResult
@@ -142,7 +217,11 @@ class ViewController: NSViewController {
             
         if DriveName.stringValue.count > 0 && SizeNumField.stringValue.count > 0 {
             CreateButton.isEnabled = true
-//            SaveTemplateButton.isEnabled = true
+            SaveTemplateButton.isEnabled = true
+        }
+        
+        if DriveName.stringValue.count > 0 {
+            DeleteTemplateButton.isEnabled = true
         }
     }
     
