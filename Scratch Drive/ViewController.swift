@@ -19,7 +19,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var SaveTemplateButton: NSButton!
     @IBOutlet weak var DeleteTemplateButton: NSButton!
     
-    @IBOutlet weak var TemplateListCombo: NSComboButton!
+    @IBOutlet weak var TemplateListCombo: NSComboBox!
     
     var currentDrive = RamDisk()
 
@@ -79,6 +79,9 @@ class ViewController: NSViewController {
     @IBAction func OnSelectTemplate(_ sender: Any) {
     }
     
+    @IBAction func OnHelp(_ sender: Any) {
+        popupMessage(title: "Scratch Drive Manual", contents: "Scratch Drive is a tool to make a ramdisk for macOS. A ramdisk is a virtual disk that is running on the memory, which is volatile (Data will be removed once computer shuts down) but is faster than the traditional storages.\n\nYou can dynamically set the size of the scratch drive by sliding the slider or manually setting the number of megabytes. You may only set to 80% of the physical RAM size for the system stability. It is highly not recommended to quit or close the app since the mount info is not preserved after the application is closed, which will lead to unsafe eject of ramdisk.")
+    }
     
     @IBAction func OnSlideUpdate(_ sender: Any) {
         SizeNumField.stringValue = String(SizeSlider.integerValue)
@@ -103,6 +106,16 @@ class ViewController: NSViewController {
         alert.messageText = title
         alert.informativeText = contents
         alert.alertStyle = .critical
+        alert.addButton(withTitle: "Dismiss")
+        return alert.runModal() == .alertFirstButtonReturn
+    }
+    
+    @discardableResult
+    public func popupMessage(title: String, contents: String) -> Bool {
+        let alert = NSAlert()
+        alert.messageText = title
+        alert.informativeText = contents
+        alert.alertStyle = .informational
         alert.addButton(withTitle: "Dismiss")
         return alert.runModal() == .alertFirstButtonReturn
     }
